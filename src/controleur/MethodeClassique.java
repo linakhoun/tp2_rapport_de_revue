@@ -1,5 +1,4 @@
 package controleur;
-
 import modele.SuiteFibonacci;
 
 /** classe de la méthode classique ayant la suite finale de Fibonacci comme variable

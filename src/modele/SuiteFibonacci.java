@@ -1,7 +1,6 @@
 package modele;
 
 import controleur.IMethode;
-
 import java.util.ArrayList;
 import java.util.List;
 
