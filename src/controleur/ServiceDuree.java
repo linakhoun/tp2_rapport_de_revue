@@ -1,7 +1,7 @@
 package controleur;
 import modele.SuiteFibonacci;
 
-/** Classe service qui calcul la durée de chaque méthode utilisée
+/**Classe service qui calcul la durée de chaque méthode utilisée
  *
  */
 public class ServiceDuree {

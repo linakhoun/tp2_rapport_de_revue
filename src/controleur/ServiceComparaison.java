@@ -1,6 +1,6 @@
 package controleur;
 
-/** Dernière classe de service pour calculer la durée de chaque méthode de calcul
+/**Dernière classe de service pour calculer la durée de chaque méthode de calcul
  *
  */
 public class ServiceComparaison {

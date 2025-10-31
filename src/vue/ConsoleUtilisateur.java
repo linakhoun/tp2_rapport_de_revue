@@ -4,10 +4,16 @@ import controleur.ServiceComparaison;
 import java.util.Scanner;
 import java.util.concurrent.TimeUnit;
 
+/**Console Utilisateur servant de vue et de saisie
+ *
+ */
 public class ConsoleUtilisateur {
     Scanner entree = new Scanner(System.in);
     ServiceComparaison serviceComparaison;
 
+    /** Constructeur fait appel au service
+     *
+     */
     public ConsoleUtilisateur() {
         while (true) {
             // initialisation
