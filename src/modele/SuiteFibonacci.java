@@ -4,7 +4,7 @@ import controleur.IMethode;
 import java.util.ArrayList;
 import java.util.List;
 
-/**Classe modèle de la suite de Fibonacci contenant une liste d'Integer
+/** Classe modèle de la suite de Fibonacci contenant une liste d'Integer
  *
  */
 public class SuiteFibonacci {

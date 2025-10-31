@@ -4,7 +4,7 @@ import controleur.ServiceComparaison;
 import java.util.Scanner;
 import java.util.concurrent.TimeUnit;
 
-/**Console Utilisateur servant de vue et de saisie
+/** Console Utilisateur servant de vue et de saisie
  *
  */
 public class ConsoleUtilisateur {

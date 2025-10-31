@@ -1,6 +1,6 @@
 package vue;
 
-/**Main
+/** Main
  *
  */
 public class Main {

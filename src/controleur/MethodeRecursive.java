@@ -1,7 +1,7 @@
 package controleur;
 import modele.SuiteFibonacci;
 
-/**Classe de la méthode récursive ayant la suite finale de Fibonacci comme variable
+/** Classe de la méthode récursive ayant la suite finale de Fibonacci comme variable
  *
  */
 public class MethodeRecursive implements IMethode {

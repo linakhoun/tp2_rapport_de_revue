@@ -1,7 +1,7 @@
 package controleur;
 import modele.SuiteFibonacci;
 
-/**Interface IMethode ayant 2 stratégies (calcul) différentes
+/** Interface IMethode ayant 2 stratégies (calcul) différentes
  *
  */
 public interface IMethode {
