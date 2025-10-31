@@ -14,13 +14,15 @@ public class ServiceComparaison {
         double dureeTotaleRecursive = dureeRecursive.getDuree();
 
         if (dureeTotaleClassique < dureeTotaleRecursive)
-            System.out.println(String.format("À %d termes, la méthode classique (%f millisecondes) est plus rapide que la méthode récursive (%f millisecondes).",
+            System.out.println(String.format("À %d termes, la méthode classique (%f millisecondes)" +
+                            " est plus rapide que la méthode récursive (%f millisecondes).\n",
                     nbTermes, dureeTotaleClassique, dureeTotaleRecursive));
         else if (dureeTotaleRecursive < dureeTotaleClassique)
-            System.out.println(String.format("À %d termes, la méthode récursive (%f millisecondes) est plus rapide que la méthode classique (%f millisecondes).",
+            System.out.println(String.format("À %d termes, la méthode récursive (%f millisecondes)" +
+                            " est plus rapide que la méthode classique (%f millisecondes).\n",
                     nbTermes, dureeTotaleRecursive, dureeTotaleClassique));
         else
-            System.out.println(String.format("À %d termes, les deux méthodes ont la même durée de %f millisecondes.",
+        System.out.println(String.format("À %d termes, les deux méthodes ont la même durée de %f millisecondes.\n",
                     nbTermes, dureeTotaleClassique));
     }
 

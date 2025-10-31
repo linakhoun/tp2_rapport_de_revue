@@ -41,7 +41,6 @@ public class SuiteFibonacci {
         if (methode != null)
             nomMethode = methode.getNom();
 
-        return "Suite Fibonacci avec " + nomMethode +
-                " : " + suite;
+        return String.format("Suite Fibonacci avec %s : ", nomMethode) + suite;
     }
 }

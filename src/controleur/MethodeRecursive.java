@@ -1,11 +1,9 @@
 package controleur;
 
-import modele.Fibonacci;
 import modele.SuiteFibonacci;
 
 public class MethodeRecursive implements IMethode {
     private SuiteFibonacci suite;
-    private Fibonacci fibonacci;
 
     public MethodeRecursive() {
         this.suite = new SuiteFibonacci();
@@ -19,14 +17,10 @@ public class MethodeRecursive implements IMethode {
 
     @Override
     public int calculer(int indexTerme) {
-        //si l'index est à 0
-        if (indexTerme == 0)
-            return 0;
-            // si l'index est à 1 (initiale) OU 2 (0 + 1), même valeur de 1 :
-        else if ((indexTerme == 1) || (indexTerme == 2)) {
-            return 1;
-            // pour la 3ème position et au-delà
-        } else
+        //si l'index est à 0 ou 1
+        if (indexTerme <= 1)
+            return indexTerme;
+        else
             return calculer(indexTerme - 1) + calculer(indexTerme - 2);
     }
 

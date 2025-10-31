@@ -1,11 +1,9 @@
 package controleur;
 
-import modele.Fibonacci;
 import modele.SuiteFibonacci;
 
 public class MethodeClassique implements IMethode {
     private SuiteFibonacci suite;
-    private Fibonacci fibonacci;
 
     public MethodeClassique() {
         this.suite = new SuiteFibonacci();
@@ -17,28 +15,27 @@ public class MethodeClassique implements IMethode {
         return "la méthode classique";
     }
 
+
     @Override
     public int calculer(int indexTerme) {
-        // initialisation des deux premier termes et de la somme
-        int terme1 = 1;
-        int terme2 = 1;
-        int somme = 0;
-
         //si l'index est à 0
         if (indexTerme == 0)
             return 0;
-            // si l'index est à 1 (initiale) OU 2 (0 + 1), même valeur de 1 :
-        else if (indexTerme == 1 || indexTerme == 2)
-            return terme1;
-            // pour la 3ème position et au-delà
-        else {
-            for (int i = 3; i <= indexTerme; i++) {
-                somme = terme1 + terme2;
-                terme1 = terme2;
-                terme2 = somme;
-            }
-            return somme;
+        //si l'index est à 1
+        else if (indexTerme == 1)
+            return 1;
+
+        // initialisation des deux premier termes et de la somme
+        int terme1 = 0;
+        int terme2 = 1;
+
+        // si l'index est à 2 ou plus
+        for (int i = 2; i <= indexTerme; i++) {
+            int somme = terme1 + terme2;
+            terme1 = terme2;
+            terme2 = somme;
         }
+        return terme2;
     }
 
     @Override
